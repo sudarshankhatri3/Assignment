@@ -39,15 +39,43 @@ class Menu:
         print("Menu added sucessfully")
 
     def updateMenu(self):
+        updated_data=[]
+
         id=int(input("Enter th id of menu to update::"))
 
+
+        # open file to find the data to update
         with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'r') as file:
             for line in file:
                 data=ast.literal_eval(line.strip())
                 if data['id']==id:
+                    new_name=input("Enter updated name:")
+                    price=float(input('Enter the updated price:'))
+                    category=str(input("Enter the updated category:"))
+                    available=str(input("Enter the availability:"))
+                    stock=int(input("Enter the updated stock:"))
+                    description=str(input("Enter the updated description:"))
                     print("Data found")
-                    print(data)
-                    break
+                    data['Name']=new_name
+                    data['Price']=price
+                    data['Category']=category
+                    data['Available']=available
+                    data['Category']=category
+                    data['Stock']=stock
+                    data['Description']=description
+                updated_data.append(data)
+
+        #open file to rewrite the data after updated sucessfully
+
+        with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'w') as file:
+            for items in updated_data:
+                file.write(str(items))
+
+        print("File updated and stored sucessfulluy")
+
+
+                    
+        
 
 
 
@@ -61,5 +89,5 @@ if __name__=="__main__":
     stock=int(input('Enter the stock:'))
     description=input('Enter the description:')
     obj=Menu(name,price,category,availability,stock,description)
-    # obj.addMenu()
+    obj.addMenu()
     obj.updateMenu()
