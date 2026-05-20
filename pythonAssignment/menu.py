@@ -34,7 +34,7 @@ class Menu:
         }
 
         with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'a') as menuFile:
-            menuFile.write(str(data))
+            menuFile.write(str(data) + "\n")
 
         print("Menu added sucessfully")
 
@@ -69,9 +69,37 @@ class Menu:
 
         with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'w') as file:
             for items in updated_data:
-                file.write(str(items))
+                file.write(str(items) + "\n")
 
         print("File updated and stored sucessfulluy")
+
+
+    # remove the menu from file 
+    def removeMenu(self):
+        #remove the menu on basis of id 
+        new_data=[]
+
+        id=int(input("Enter th id of menu to delete:"))
+
+
+        # open file to find the data to update
+        with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'r') as file:
+            for line in file:
+                data=ast.literal_eval(line.strip())
+                if data['id']!=id:
+                    new_data.append(data)
+                else:
+                    print('Deleting',data)
+        
+
+        #open file to rewrite the data after updated sucessfully
+        with open("/home/sudu/Assignment/pythonAssignment/data/menu.txt",'w') as file:
+            for items in new_data:
+                file.write(str(items) + "\n")
+
+        print("Menu deleted sucessfulluy")
+
+
 
 
                     
@@ -91,3 +119,4 @@ if __name__=="__main__":
     obj=Menu(name,price,category,availability,stock,description)
     obj.addMenu()
     obj.updateMenu()
+    obj.removeMenu()
