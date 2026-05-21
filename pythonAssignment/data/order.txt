@@ -1,2 +1,70 @@
 {'orderId': 8658, 'tableNo': 2323, 'menuId': 6475, 'Name': 'fsdfdsfdsf', 'Price': 345.0, 'Quantity': 21, 'Total': 7245.0}
 {'orderId': 6271, 'tableNo': 566, 'menuId': 8848, 'Name': 'dsadasdsa', 'Price': 3456.0, 'Quantity': 34, 'Total': 117504.0}
+
+
+
+pythonAssignment/
+│
+├── main.py
+├── menu.py
+├── order.py
+├── billing.py
+│
+└── data/
+    ├── menu.txt
+    └── order.txt
+
+
+
+create  class menu to  handles:
+adding menu
+updating menu
+removing menu
+ then 
+create a constructor to stores menu information inside the object 
+
+create menu dictionary
+save into menu.txt 
+
+
+create addMenu method to create menu dictionary
+and save into menu.txt
+
+and then create dictionary to store the data 
+and store the file then use append mode which store the old data stays safe 
+
+and write the data and store in file like : {'id': 1234, 'Name': 'Pizza', 'Price': 500}
+
+then next method is update menu which is used to update menu by id .step involves in this method :
+  first read the every line in file 
+  convert string into dictionary 
+  find the matching id 
+  If the id match then update the data 
+  then temporaily store all record in list 
+  again rewrite the file using write mode which erase previous data and write updated method 
+
+  Overall Working Architecture:
+
+        User Input
+            ↓
+        Menu Class Object
+            ↓
+        Method Called
+            ↓
+        Dictionary Created
+            ↓
+        Stored in Text File
+            ↓
+        Read Again Using ast.literal_eval()
+            ↓
+        Update/Delete Operations
+            ↓
+        Rewrite File
+
+
+File Handling Modes :
+'a'   Append new data
+'r'   Read data
+'w'   Rewrite file 
+
+

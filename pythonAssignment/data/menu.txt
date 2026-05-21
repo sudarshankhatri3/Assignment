@@ -1,1 +1,132 @@
 {'id': 8848, 'Name': 'dsadasdsa', 'Price': 3456.0, 'Category': 'ewrwer', 'Available': 'erwerew', 'Stock': 89, 'Description': 'esfsdfdgdfg'}
+
+OOP is a programming paradigm that organizes data and behavior into objects, which are instances of classes. Classes define the attributes and methods of objects, and can inherit from other classes to create hierarchies and polymorphism. Objects communicate with each other through messages, which are calls to methods. OOP aims to increase the abstraction, encapsulation, and modularity of software systems.
+
+
+
+Object-Oriented Programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data in the form of fields (often known as attributes or properties) and code in the form of procedures (often known as methods). In OOP, software is viewed as a collection of these interacting objects, as opposed to a traditional view where a program is seen as a list of tasks (the procedural approach). OOP focuses on the objects that developers want to manipulate rather than the logic required to manipulate them, facilitating a more modular, intuitive approach to software development.
+
+
+OOP, short for Object-Oriented Programming, is like being a director of a play where each actor (object) has a script (attributes) and knows how to perform certain scenes (methods). Classes are your script templates. Inheritance lets you create spin-off plays with characters having traits from the original, while polymorphism lets actors play different roles depending on the scene. Encapsulation keeps backstage drama (data) out of the public eye. It's a way to make complex coding stories easy to manage and more engaging.
+
+
+
+Object-oriented programming is a programming paradigm based on the concept of objects that can contain data and code: data in the form of fields and code in the form of procedures. Definition of classes and methods for inherited hierarchies and polymorphisim.
+The main goal is to provide more abstraction, encapsulation and easy management/maintenance as the system grows
+
+
+
+Object-Oriented Programming (OOP) provides a set of principles and features that contribute to the development of complex software systems by promoting modularity, encapsulation, abstraction, and other practices that enhance code organization, maintainability, and scalability. It allows developers to build software that reflects the structure and dynamics of the problem domain, making it more intuitive and easier to manage
+
+
+
+
+Object-Oriented Programming (OOP) is a programming paradigm that uses "objects" to design applications and computer programs. These objects are organized into classes, which define the object's characteristics and behaviors. In OOP, each object can receive and send messages and process data, making it a modular and intuitive way to approach programming. This method simplifies complex coding tasks by emphasizing the reusability of components and promoting a structured and clear programming style, allowing developers to tackle more complex problems with more manageable and understandable code.
+
+
+Why use OOP?
+Object-oriented programming (OOP) offers several advantages for developing complex software systems, such as reusability, extensibility, maintainability, testability, and design patterns. Reusability enables programmers to reuse existing classes and objects, reducing code duplication and maintenance efforts. Extensibility allows programmers to extend the functionality of existing classes and objects, adding new features and behaviors without modifying the original code. Maintainability facilitates the separation of concerns, making the code easier to understand, test, and debug. Testability supports the use of unit testing frameworks to verify the correctness and quality of individual classes and objects. Finally, OOP provides a rich set of design patterns, which are proven solutions to common problems in software design.
+
+
+
+OOP facilitates modularity and reusability through encapsulation, allowing developers to create objects that encapsulate behavior and data, reducing code duplication and increasing maintainability. This modularity also enhances readability and manageability of code, as complex problems can be broken down into smaller, more manageable parts. Secondly, inheritance in OOP allows new classes to inherit features from existing classes, promoting code reusability and extensibility. This means developers can build upon existing code without modifying it, leading to a more efficient development process. Thirdly, polymorphism allows objects to be treated as instances of their parent class, making it easier to generalize functionality.
+
+
+
+OOP allows to structure code around following qualities:
+
+- Elegance
+- Simplicity
+- Flexibility
+- Readability
+- Maintainability
+
+
+
+Object-oriented programming (OOP) provides a modular and organized approach to software development, enhancing code readability and maintainability. By encapsulating data and behavior within objects, OOP promotes reusability, making it easier to adapt and extend code. This paradigm fosters the creation of scalable and efficient systems, fostering a more intuitive and structured design process.
+
+
+
+
+
+
+
+Object-Oriented Programming (OOP), while powerful, presents several challenges, particularly as software systems become more complex. One of the primary challenges is managing complexity as the number of objects and interactions increases, which can make the system difficult to understand and maintain. This complexity can lead to issues like “class explosion,” where the number of classes grows excessively, and “inheritance hell,” where deep and complex inheritance hierarchies make the code hard to follow and modify. Another challenge is the potential for increased memory usage and lower performance compared to procedural programming, due to the overhead of objects and the use of abstractions like virtual methods.
+
+
+
+One major issue is complexity: while OOP is great for managing complex software, the structure itself can become complicated, especially for large projects. This complexity can make it difficult for beginners to grasp. Another challenge is performance: OOP can sometimes be slower and use more memory than other programming styles, because of the additional processing OOP requires to manage objects and classes. Also, OOP might lead to less efficient code if not well-designed, as unnecessary layers and objects can make the program bulkier and slower. Lastly, OOP requires a good design upfront; making changes later can be difficult and time-consuming if the initial design isn’t flexible enough.
+
+
+
+
+
+In the AI domain, OOP's challenges can be particularly pronounced. The complexity inherent in OOP, such as deep hierarchies or multiple interfaces, can complicate the design of AI algorithms, making them harder to manage. AI apps demand high efficiency, and OOP features like dynamic dispatch or extensive object instantiation can impact processing speed and memory usage. Tight coupling in OOP can also hinder the flexibility needed for AI systems to adapt and evolve, as AI often requires rapid iterations. Finally, the abstraction in OOP, while beneficial for encapsulation, can obscure the inner workings of AI algorithms, making optimization more challenging, especially when dealing with complex neural networks or machine learning models.
+
+
+
+Increased complexity, difficulty in designing and the risk of overusing inheritance, leading to inflexible code. Proper encapsulation can pose challenges in certain scenarios.
+
+
+What are the best practices of OOP?
+To maximize the benefits of OOP and overcome the challenges, programmers should follow some best practices. Abstraction and encapsulation should be used to hide implementation details and expose only the essential interfaces of classes and objects. Additionally, inheritance and polymorphism should be leveraged to take advantage of existing functionality and behavior, while avoiding duplication and overriding. Composition and aggregation can create complex classes from simpler ones, while maintaining loose coupling and high cohesion. Design principles and patterns should guide the design and architecture of the system, while avoiding anti-patterns. Finally, code quality tools and standards should be used to ensure readability, consistency, and maintainability of the code.
+
+
+Here are four key best practices for Object-Oriented Programming (OOP):
+
+1. Encapsulation:
+   Encapsulate data and methods within objects, limiting external access and promoting a clear interface for interaction.
+
+2. Modularity:
+Design classes with a single responsibility, enhancing modularity, and cohesion. This improves maintainability and scalability.
+
+3. Polymorphism:
+Leverage polymorphism to create flexible and adaptable code. Use interfaces and abstract classes to achieve polymorphic behavior.
+
+4. Abstraction: 
+Abstraction involves simplifying complex systems by modeling classes based on their essential characteristics. This enhances understanding and facilitates problem-solving.
+
+
+OOP best practices ensure clean, flexible code. Prioritize Single Responsibility, Open/Closed for extensibility, Liskov Substitution for interchangeability, and Interface Segregation for specific interfaces. Embrace Dependency Inversion, prefer Composition over Inheritance, encapsulate for clarity, and keep code small. Avoid global state, use Design Patterns wisely, write unit tests, and maintain consistent naming. These principles collectively enhance code clarity, flexibility, and ease of maintenance.
+
+
+
+
+
+
+Best practices in Object-Oriented Programming (OOP) include:
+1. **Encapsulation**: Keep data (attributes) and the code (methods) that manipulates it together in classes. This helps protect the data from external interference and misuse.
+2. **Modularity**: Break down your program into smaller, manageable pieces (classes and objects). This makes the code more organized, understandable, and easier to test.
+3. **Inheritance**: Use inheritance wisely to create a hierarchy of classes, allowing new classes to inherit features from existing ones, which reduces code redundancy.
+4. **Polymorphism**: Utilize polymorphism to allow the same function to behave differently in different contexts, making the code more flexible and reusable.
+
+
+What are the trends in OOP?
+OOP is continuously adapting to the ever-changing needs of software development. For example, it is incorporating elements of functional programming, such as immutability and higher-order functions, to improve the expressiveness, concurrency, and reliability of the code. It is also adopting concepts of reactive programming, such as streams and observables, to handle asynchronous and event-driven scenarios. Moreover, OOP is applying principles of domain-driven design, such as value objects and entities, to model the business domain and logic of the system. Finally, it is supporting practices of microservices, such as service decomposition and service discovery, to create scalable, distributed, and resilient systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If stock is enough, it builds an order dictionary containing details like order ID, table number, item name, price, quantity, and a calculated total, then deducts the ordered quantity from stock and rewrites the updated menu back to menu.txt. 
+The completed order is then appended to order.txt using append mode so that no previous records are lost. The second method, displayOrder(), reads all saved orders from order.txt, prints each one in a clean formatted layout, and calculates a grand total by summing all order totals. It is wrapped in a try/except block to gracefully handle the case where no orders have been placed yet. Overall, this class demonstrates key OOP principles such as encapsulation, state management, and single responsibility, while using file-based persistence to ensure data is retained even after the program closes.
